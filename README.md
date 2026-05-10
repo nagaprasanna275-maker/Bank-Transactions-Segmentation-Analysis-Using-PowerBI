@@ -1,6 +1,6 @@
 # Bank Customer Segmentation & Transaction Analysis using Power BI
 
-Bank Customer Segmentation & Transaction Analysis using Power BI | Analyzed 1M+ records to identify retention gaps and revenue drivers | DAX, Power Query & Data Modeling
+Analyzed 1M+ customer transaction records to identify customer segments, retention gaps, revenue trends, and transaction behavior using Power BI, DAX, and Power Query.
 
 ---
 
@@ -8,85 +8,106 @@ Bank Customer Segmentation & Transaction Analysis using Power BI | Analyzed 1M+ 
 
 ## 📌 Problem Statement
 
-Banks manage massive volumes of customer and transaction data, but without proper segmentation, it becomes difficult to identify high-value customers and design targeted strategies.
+Banks manage massive volumes of customer and transaction data, but without proper segmentation, it becomes difficult to identify high-value customers and develop targeted business strategies.
 
-This project analyzes demographics and transaction patterns of **1.04 million+ records** using **Power BI** to improve customer loyalty, acquisition, and retention.
-
----
-
-## 📊 Dataset Overview
-
-- **Source:** Bank transaction dataset  
-- **Raw Records:** 1,048,568  
-- **Cleaned Records:** 1,045,170  
-- **Transaction Volume:** ₹1.64 Billion+  
-- **Key Fields:** CustomerID, DOB, Gender, Location, Account Balance, Transaction Date/Amount  
+This project analyzes customer demographics and transaction behavior across 1.04M+ records to improve customer retention, acquisition, and revenue optimization.
 
 ---
 
-## 🧹 Data Cleaning & Preparation (Power Query)
+# 📊 Dataset Overview
 
-- **Type Conversion:** Formatted CustomerDOB, TransactionDate, and TransactionTime  
-- **Handling Nulls:** Replaced missing gender and location values with `"Unknown"`  
-- **Validation:** Removed invalid records and enforced consistent numeric formats  
-- **Feature Engineering:** Created Age Groups and Loyalty Status columns  
+| Attribute | Details |
+|---|---|
+| Source | Bank Transaction Dataset |
+| Raw Records | 1,048,568 |
+| Cleaned Records | 1,045,170 |
+| Transaction Volume | ₹1.64 Billion+ |
+| Tools Used | Power BI, DAX, Power Query |
 
----
+### Key Fields
 
-## 🧮 Data Modeling & DAX
-
-### Calculated Columns
-
-- Customer Age  
-- Age Group (18–24, 25–34, 35–44, 45–54, 55+)  
-- State (Derived from location data)  
-- Loyalty Status  
-
-### Key Measures
-
-- **Total Revenue:** Sum of all transaction amounts  
-- **Loyalty Status:** Loyal, Regular, New, or Lost  
-- **Retention Rate:** Analysis of retained vs lost customers  
-- **Avg Balance:** Average account balance per segment  
-- **Avg Transaction Value:** Average transaction amount  
+| Field Name | Description |
+|---|---|
+| CustomerID | Unique customer identifier |
+| DOB | Customer date of birth |
+| Gender | Customer gender |
+| Location | Customer city/state |
+| Account Balance | Current account balance |
+| Transaction Date | Date of transaction |
+| Transaction Amount | Transaction value |
 
 ---
 
-## 📈 Key Insights
+# 🧹 Data Cleaning & Preparation (Power Query)
 
-- Male customers dominate (~71%) of total transactions  
-- Customers aged **35–44** generated the highest revenue  
-- Maharashtra had the highest customer concentration and revenue  
-- Peak transaction activity occurred around **7 PM**, generating ₹14.8 crores  
-- Lost customers significantly outnumbered loyal customers, highlighting retention gaps  
-
----
-
-## 💡 Strategic Recommendations
-
-### 🎯 Loyalty
-Launch personalized rewards for high-value customers aged 35–44.
-
-### 🚀 Acquisition
-Run digital campaigns targeting the 18–34 demographic with referral bonuses.
-
-### 🔄 Retention
-Trigger re-engagement alerts for inactive customers before churn.
-
-### 🌍 Expansion
-Launch regional campaigns in low-penetration states like Assam and Bihar.
+| Process | Description |
+|---|---|
+| Type Conversion | Formatted DOB, Date, and Time columns |
+| Null Handling | Replaced missing values with "Unknown" |
+| Data Validation | Removed invalid and duplicate records |
+| Feature Engineering | Created Age Group and State columns |
 
 ---
 
-## 🛠 Tools Used
+# 🧮 Data Modeling & DAX
 
-- Power BI (Visualization & Dashboard Development)  
-- DAX (Measures & Business Logic)  
-- Power Query (ETL & Data Cleaning)  
-- Excel/CSV (Dataset Handling)  
+## 📌 Calculated Columns
+
+| Column | Description |
+|---|---|
+| Customer Age | Calculated from DOB |
+| Age Group | 18–24, 25–34, 35–44, 45–54, 55+ |
+| State | Derived from location |
+| Loyalty Status | Loyal, Regular, New, Lost |
 
 ---
 
-## 📌 Conclusion
+## 📌 Key Measures
 
-This project demonstrates how customer segmentation and transaction analysis can uncover retention gaps, identify revenue-driving customer segments, and support data-driven business decisions using interactive Power BI dashboards.
+| Measure | Description |
+|---|---|
+| Total Revenue | Sum of all transaction amounts |
+| Retention Rate | Loyal vs Lost customer analysis |
+| Avg Balance | Average account balance |
+| Total Customers | Distinct customer count |
+| Avg Transaction Value | Average transaction amount |
+
+---
+
+# 📈 Key Insights
+
+| Area | Insight |
+|---|---|
+| Customer Demographics | Male customers contributed ~71% of transactions |
+| Valuable Segment | Age group 35–44 generated highest revenue |
+| Geography | Maharashtra had highest customer concentration |
+| Peak Activity | Transactions peaked around 7 PM |
+| Retention Analysis | Lost customers outnumbered loyal customers |
+
+---
+
+# 💡 Strategic Recommendations
+
+| Strategy Area | Recommendation |
+|---|---|
+| Loyalty Programs | Personalized rewards for high-value customers |
+| Acquisition | Referral campaigns targeting 18–34 age group |
+| Retention | Re-engagement alerts for inactive customers |
+| Expansion | Regional campaigns in low-penetration states |
+
+---
+
+# 🛠 Tools & Technologies Used
+
+| Tool | Purpose |
+|---|---|
+| Power BI | Dashboard development & visualization |
+| DAX | Measures and business logic |
+| Power Query | Data cleaning & ETL |
+| Excel/CSV | Dataset handling |
+
+---
+
+# 📌 Conclusion
+
+This project demonstrates how customer segmentation and transaction analysis can uncover customer retention gaps, identify revenue-driving segments, and support data-driven business decisions using interactive Power BI dashboards.
